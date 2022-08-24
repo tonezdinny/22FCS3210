@@ -1,6 +1,7 @@
 /*
  * CS3210 - Principles of Programming Languages - Fall 2022
  * Instructor: Thyago Mota
+ * Student: 
  * Description: Homework 01 - Scala Basics
  */
 
