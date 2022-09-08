@@ -82,30 +82,45 @@ class LexicalAnalyzer(private var source: String) extends Iterable[Lexeme]{
           return new Lexeme("eof", Token.EOF)
 
         if (hasLetter) {
-            val str = getChar + ""
+            var str = getChar + ""
             nextChar
-            return new Lexeme(str, Token.IDENTIFIER)
+          while ((hasLetter || hasDigit) && !eof) {
+            str += getChar
+            nextChar
+          }
+          return new Lexeme(str, Token.IDENTIFIER)
         }
-        // TODO #1: identify a literal value
+        // TODOd #1: identify a literal value
         else if (hasDigit) {
-
+          var str = ""
+          while (hasDigit && !eof) {
+            str += getChar
+            nextChar
+          }
+          return new Lexeme(str, Token.LITERAL)
         }
         else if (getChar == '+') {
           val str = getChar + ""
           nextChar
           return new Lexeme(str, Token.ADDITION)
         }
-        // TODO #2: identify a subtraction operator
+        // TODOd #2: identify a subtraction operator
         else if (getChar == '-') {
-
+          val str = getChar + ""
+          nextChar
+          return new Lexeme(str, Token.SUBTRACTION)
         }
-        // TODO #3: identify a multiplication operator
+        // TODOd #3: identify a multiplication operator
         else if (getChar == '*') {
-
+          val str = getChar + ""
+          nextChar
+          return new Lexeme(str, Token.MULTIPLICATION)
         }
-        // TODO #4: identify a division operator
+        // TODOd #4: identify a division operator
         else if (getChar == '/') {
-
+          val str = getChar + ""
+          nextChar
+          return new Lexeme(str, Token.DIVISION)
         }
 
         // throw an exception if an unrecognizable symbol is found
