@@ -86,7 +86,7 @@ The lexical analyzer must implement the Iterable[Lexeme] trait.
 
 Next, you are asked to implement a top-down recursive descent parser for the Mouse PL. Your parse tree should be based on the provided grammar. See the examples in the next section to verify how each parse tree should look like. If the generated parse tree is different, the mouse interpreter will not be able to run the examples. The syntax analyzer is worth 50 points (10 points for each parse method implemented). The syntax analyzer must have a public method called parse that returns the parse tree (based on the given Node class). 
 
-In case the syntax analyzer reaches a impossible state because of a syntax error, it must report it by throwing an appropriate error message. For example: Syntax Analyzer Error: ] expected!
+In case the syntax analyzer reaches an impossible state because of a syntax error, it must report it by throwing an appropriate error message. For example: Syntax Analyzer Error: ] expected!
 
 ## Examples 
 
@@ -1416,12 +1416,12 @@ All source files must be identified with the name(s) of the student(s).
 
 # Rubric
 
-25 Lexical Analyzer
-50 Syntax Analyzer
-10 Mouse Interpreter
-15 nCK in Mouse
--10 didn't identify the name(s) of the student(s) in all source files 
--10 didn't submit mouse.zip according to the instructions
+* 25 Lexical Analyzer
+* 50 Syntax Analyzer
+* 10 Mouse Interpreter
+* 15 nCK in Mouse
+* -10 didn't identify the name(s) of the student(s) in all source files 
+* -10 didn't submit mouse.zip according to the instructions
 
 Late submission won't be accepted!
 
