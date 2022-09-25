@@ -2,7 +2,7 @@
 
 According to Bjarne Stroustrup (creator of C++), an **iterator** is this notion of a pointer to an element in a collection. **Iterators** are normally implemented by objects that maintain a reference to an element in the collection. The name **iterator** can be a little misleading, because the iterator itself does not iterate: what iterates is the **for** construct that uses the iterator. 
 
-To illustrate how **iterators** work, consider the [BST](src/iterator.py) (Binary Search Tree) class implemented in Python. Your first taks in this assignment is to write an iterator for BST using in-order tree traversal. To incorporate an **iterator** to a class in Python you are required to override the two methods identified in the the TO-DOs: ```__iter__``` and ```__next__```. Different than Java, **iterators** in Python don't have a specific method to check if there are no more elements to return. 
+To illustrate how **iterators** work, consider the [BST](src/bst_iterator.py) (Binary Search Tree) class implemented in Python. Your first taks in this assignment is to write an iterator for BST using in-order tree traversal. To incorporate an **iterator** to a class in Python you are required to override the two methods identified in the the TO-DOs: ```__iter__``` and ```__next__```. Different than Java, **iterators** in Python don't have a specific method to check if there are no more elements to return. 
 
 ```
 TODO #1: return an iterator for BST; hint: use _in_order to build a list with the elements; then return "self"
