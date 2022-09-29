@@ -1,5 +1,7 @@
-For each of the grammars from Q1-3, classify them as either regular or context-free. Then answer yes/no whether each word can be generated from the grammar. If you answer yes, show the sequence of productions to generate the word. When you are done, submit this README.md file with your answers on Canvas.
+for each of the grammars from Q1-3, classify them as either regular or context-free. Then answer yes/no whether each word can be generated from the grammar. If you answer yes, show the sequence of productions to generate the word. When you are done, submit this README.md file with your answers on Canvas.
 Q1
+
+This is Context Free
 G = (V, T, P, S)
 V = {S, NP, NOM, VP, Det, Noun, Verb, Aux}
 T = {that, this, a, the, man, book, flight, meal, include, read, does}
@@ -56,12 +58,18 @@ S -> NP VP
 -> a man read a book
 
 Q2
+
+This is regular grammar
+
 G = ({S, A, B}, {a, b}, P, S)
 P = {S → aA, A → bB | ε, B → aA}
 a)a YES S -> aA -> a
 b)aba YES S -> aA -> abB -> abaA -> aba c)bb NO
 d) abb NO
+
+
 Q3
+This is regular grammar 
 G = ({S, A}, {0, 1}, P, S)
 P = {S → A0, A→A01|ε}
 a) 00 NO
