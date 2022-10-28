@@ -98,7 +98,7 @@ Hints:
 
 Hint: consider implementing **solve** recursively. 
 
-To be clear: you are not required to find ALL solutions to the puzzle, but only the first one found!
+To be clear: you are not required to find ALL solutions to the puzzle, but only to return the first one found!
 
 # Submission
 
