@@ -6,7 +6,7 @@ In this programming assignment you are asked to write an implementation for a Su
 
 A Sudoku Board (source: Wikipedia) 
 
-![pic1.png](pics/pic1.png)
+![pic2.png](pics/pic2.png)
 
 Sudoku Boxes (w/ identifications) 
 
