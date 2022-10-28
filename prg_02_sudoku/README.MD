@@ -51,6 +51,9 @@ You are required to implement the following I/O functions:
 * **readBoard**: takes a String with the name of the text file containing a sudoku puzzle and returns a 2D array of Int.
 * **boardToString**: given a board (2D array of Int), returns a String representation (similar to the input text file). 
 
+Hints: 
+* consider using **map** in **readBoard** and **mkString** in **boardToString**. 
+
 ## Getter Functions
 
 The following required functions define building units for other more complex functions described later. 
