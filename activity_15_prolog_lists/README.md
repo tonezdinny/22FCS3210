@@ -55,3 +55,7 @@ Write a predicate **factorial** that can be used to compute the factorial of a g
 factorial(0, ___).
 factorial(X, Y) :- X > 0, X_dec is ___, factorial(___, Z), Y is ___.
 ```
+
+# Example 4
+
+Write a predicate **subs(X, Y, L1, L2)** having L2 as the result of substituting Y for all occurences of X in L1. For example, **subs(a, x, [a, b, a, c], [x, b, x, c])** is **true** whereas **subs(a, x, [a, b, a, c], [a, b, x, c])** is **false**. 
