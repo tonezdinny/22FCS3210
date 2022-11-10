@@ -46,3 +46,12 @@ Write a predicate **listpten** which translates a list of Portuguese number word
 ```
 listpen([tres, cinco, sete], [three, five, seven]).  
 ```
+
+# Example 3
+
+Write a predicate **factorial** that can be used to compute the factorial of a given number. Hint: fill in the blanks appropriately. 
+
+```
+factorial(0, ___).
+factorial(X, Y) :- X > 0, X_dec is ___, factorial(___, Z), Y is ___.
+```
