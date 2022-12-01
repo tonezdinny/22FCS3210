@@ -40,7 +40,7 @@ Time elapsed: 14.108387 seconds!
 
 # Part 2: Go Goroutines
 
-In this part of the assignment you will repeat the simulation done in part 1 but now using Go goroutines. The first function that you are asked to implement in the **vote** which will be used as the code for the **VOTERS=1M** goroutines to be created. Similarly to what you did using Lua, create a **ballot** (an array of size **PROPOSALS=3**), fill it with random values equal to 0 (no) or 1 (yes). Then have the goroutine sleep for a random amount of time up to 10s. Before returning, the goroutine should add the **ballot** in the **ballot_box**, implemented as a Go channel. 
+In this part of the assignment you will repeat the simulation done in part 1 but now using Go goroutines. The first function that you are asked to implement is the **vote** which will be used as the code for the **VOTERS=1M** goroutines to be created. Similarly to what you did using Lua, create a **ballot** (an array of size **PROPOSALS=3**), fill it with random values equal to 0 (no) or 1 (yes). Then have the goroutine sleep for a random amount of time up to 10s. Before returning, the goroutine should add the **ballot** in the **ballot_box**, implemented as a Go channel. 
 
 Function **tally_results** is similar to the one implemented in part 1, except that the **ballot_box** is a Go channel. Also, because the simulation needs to be timed, make sure to record the starting time (hint: use **time.Now()** function). The simulation begins by creating a **ballot_box** (a channel). After that, the simulation should start **VOTERS=1M** goroutines. 
 
