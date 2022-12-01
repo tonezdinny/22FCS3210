@@ -44,7 +44,7 @@ In this part of the assignment you will repeat the simulation done in part 1 but
 
 Function **tally_results** is similar to the one implemented in part 1, except that the **ballot_box** is a Go channel. Also, because the simulation needs to be timed, make sure to record the starting time (hint: use **time.Now()** function). The simulation begins by creating a **ballot_box** (a channel). After that, the simulation should start **VOTERS=1M** goroutines. 
 
-There is no explicit scheduling of the goroutines because this will be handled by Go runtime. However, you want to make sure that all goroutines are done before finishing the simulation. Use **WaitGroup** for synchronization like we discussed in class. 
+There is no explicit scheduling of the goroutines because this will be handled by Go's runtime. However, you want to make sure that all goroutines are done before finishing the simulation. Use **WaitGroup** for synchronization like we discussed in class. 
 
 The final part of the simulation should display the results of the election and how long the whole process took (in seconds). Hint: use **time.Since** function. A correct implementation should take less than 15s. 
 
