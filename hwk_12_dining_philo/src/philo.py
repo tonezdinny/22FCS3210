@@ -15,7 +15,7 @@ class Philosopher(threading.Thread):
         threading.Thread.__init__(self) 
         self.name = name 
         self.left_fork = left_fork
-        self.righ_fork = right_fork
+        self.right_fork = right_fork
 
     def think(self): 
         time.sleep(
@@ -31,11 +31,11 @@ class Philosopher(threading.Thread):
         while True: 
             self.left_fork.acquire()
             print(self.name + " got the left fork")
-            self.righ_fork.acquire()
+            self.right_fork.acquire()
             print(self.name + " got the right fork")
             self.think()
             self.eat()
-            self.righ_fork.release()
+            self.right_fork.release()
             print(self.name + " released the right fork")
             self.left_fork.release()
             print(self.name + " released the left fork")
